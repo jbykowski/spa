@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Figs</title>
+  <link href='http://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,200,200italic,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<main class="container-fluid">
+		<nav class="col-xs-3">
+			<div id="logo">
+				Figs.
+				<div id="tagline">A fairly innocent collection of GIFs from around the web.</div>
+			</div>
+			<ul class="nav nav-pills nav-stacked">
+				<li role="presentation"><a href="#"><i class="fa fa-leaf"></i>&nbsp;&nbsp;Figs</a></li>
+				<li role="presentation"><a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;Sign In</a></li>
+				<li role="presentation"><a href="#"><i class="fa fa-check-square"></i>&nbsp;&nbsp;Sign Up</a></li>
+			</ul>		
+		</nav>
+		<section class="col-xs-9">
+			<%= yield %>
+		</section>
+	</main>
+
+</body>
+</html>
