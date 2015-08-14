@@ -14,16 +14,23 @@
  *= require_self
  */
 
-html, body {height:100%;font-family:"Source Sans Pro", sans-serif}
+html, body {height:100%;font-family:"Source Sans Pro", sans-serif;font-size:18px}
 main {height:100%;padding:0px !important}
 nav {height:100%;background:url(http://www.freevector.com/site_media/preview_images/FreeVector-Leaf-Pattern.jpg);padding:10px}
-section {height:100%;}
-header {font-size:40px;text-align:right;padding-top:10px}
+section {height:100%;padding:0px 30px 0px 30px !important}
+header {font-size:40px;text-align:right;margin-bottom:20px;padding-top:10px}
 header .fa-stack {color:#8CB43F}
+aside {line-height:30px}
+label {font-family:"Source Sans Pro", sans-serif}
+a {color:#999}
+a:hover {color:darkgreen;background:none}
 
-#logo {font-family:Lora, serif;font-size:72px;color:#FFF;text-shadow:1px 1px 2px #000;margin-bottom:50px;padding-top:25px}
+#logo {font-family:Lora, serif;font-size:72px;color:#FFF;text-shadow:1px 1px 2px #000;margin-bottom:50px;padding-top:35px}
 #tagline {font-family:inherit;font-size:22px;color:inherit;text-shadow:inherit;line-height:30px;margin-top:50px}
 
 .nav-pills {font-family:"Source Sans Pro", sans-serif;font-size:30px}
 .nav-pills a {color:#FFF;text-shadow:1px 1px 1px #000}
 .nav-pills a:hover {background:darkgreen !important}
+.alert {font-family:"Source Sans Pro", sans-serif !important;font-size:14px !important}
+.field_with_errors {width:100% !important;background:none !important;margin:0px !important;padding:0px !important}
+

@@ -18,9 +18,14 @@
 				<div id="tagline">A fairly innocent collection of GIFs from around the web.</div>
 			</div>
 			<ul class="nav nav-pills nav-stacked">
-				<li role="presentation"><a href="#"><i class="fa fa-leaf"></i>&nbsp;&nbsp;Figs</a></li>
-				<li role="presentation"><a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;Sign In</a></li>
-				<li role="presentation"><a href="#"><i class="fa fa-check-square"></i>&nbsp;&nbsp;Sign Up</a></li>
+				<li role="presentation"><%= link_to(raw('<i class="fa fa-leaf"></i>&nbsp;&nbsp;Figs'), { controller: '/figs', action: 'index' }) %></li>
+				<% if user_signed_in? %>
+					<li role="presentation"><%= link_to(raw('<i class="fa fa-plus"></i>&nbsp;&nbsp;Post'), { controller: '/figs', action: 'new' }) %></li>
+					<li role="presentation"><%= link_to(raw('<i class="fa fa-sign-out"></i>&nbsp;&nbsp;Sign Out'), { controller: 'devise/sessions', action: 'destroy' }, method: :delete) %></li>
+				<% else %>
+					<li role="presentation"><%= link_to(raw('<i class="fa fa-user"></i>&nbsp;&nbsp;Sign In'), { controller: 'devise/sessions', action: 'new' }) %></li>
+					<li role="presentation"><%= link_to(raw('<i class="fa fa-check-square"></i>&nbsp;&nbsp;Sign Up'), { controller: 'devise/registrations', action: 'new' }) %></li>
+				<% end %>
 			</ul>		
 		</nav>
 		<section class="col-xs-9">
