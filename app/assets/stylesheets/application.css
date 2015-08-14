@@ -1,0 +1,29 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+html, body {height:100%;font-family:"Source Sans Pro", sans-serif}
+main {height:100%;padding:0px !important}
+nav {height:100%;background:url(http://www.freevector.com/site_media/preview_images/FreeVector-Leaf-Pattern.jpg);padding:10px}
+section {height:100%;}
+header {font-size:40px;text-align:right;padding-top:10px}
+header .fa-stack {color:#8CB43F}
+
+#logo {font-family:Lora, serif;font-size:72px;color:#FFF;text-shadow:1px 1px 2px #000;margin-bottom:50px;padding-top:25px}
+#tagline {font-family:inherit;font-size:22px;color:inherit;text-shadow:inherit;line-height:30px;margin-top:50px}
+
+.nav-pills {font-family:"Source Sans Pro", sans-serif;font-size:30px}
+.nav-pills a {color:#FFF;text-shadow:1px 1px 1px #000}
+.nav-pills a:hover {background:darkgreen !important}

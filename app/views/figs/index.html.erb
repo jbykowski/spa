@@ -1,0 +1,37 @@
+<header>
+	Fresh, Organic Gifs
+	<span class="fa-stack fa-lg">
+  	<i class="fa fa-circle fa-stack-2x"></i>
+  	<i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
+	</span>
+</header>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Figs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @figs.each do |fig| %>
+      <tr>
+        <td><%= fig.url %></td>
+        <td><%= fig.user_id %></td>
+        <td><%= link_to 'Show', fig %></td>
+        <td><%= link_to 'Edit', edit_fig_path(fig) %></td>
+        <td><%= link_to 'Destroy', fig, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fig', new_fig_path %>

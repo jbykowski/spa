@@ -1,0 +1,25 @@
+<%= form_for(@fig) do |f| %>
+  <% if @fig.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fig.errors.count, "error") %> prohibited this fig from being saved:</h2>
+
+      <ul>
+      <% @fig.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
