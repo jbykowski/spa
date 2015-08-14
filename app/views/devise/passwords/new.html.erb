@@ -1,0 +1,24 @@
+<header>
+	Forgot Your Password?
+	<span class="fa-stack fa-lg">
+  	<i class="fa fa-circle fa-stack-2x"></i>
+  	<i class="fa fa-user fa-stack-1x fa-inverse"></i>
+	</span>
+</header>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <div class="form-group">
+		<%= devise_error_messages! %>
+		<div class="field">
+			<%= f.label :email %><br />
+			<%= f.email_field :email, autofocus: true, class: "form-control" %>
+		</div>
+		<div class="actions">
+			<%= f.submit "Send me reset password instructions", class: "btn btn-lg btn-success" %>
+		</div>
+	</div>
+<% end %>
+
+<aside>
+	<%= render "devise/shared/links" %>
+</aside>

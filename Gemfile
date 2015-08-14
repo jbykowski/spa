@@ -7,6 +7,8 @@ gem 'rails', '4.2.3'
 gem 'sqlite3'
 # Use Bootstrap
 gem 'bootstrap-sass', '~> 3.3.5.1'
+# Use Devise for authentication
+gem 'devise'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
